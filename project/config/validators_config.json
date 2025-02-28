@@ -1,0 +1,29 @@
+{
+    "validators": [
+        {
+            "column_name": "PIN Code",
+            "validator_type": "pin",
+            "params": {
+                "valid_pins_file": "valid_pins.txt"
+            }
+        },
+        {
+            "column_name": "Phone",
+            "validator_type": "phone",
+            "params": {}
+        },
+        {
+            "column_name": "Email",
+            "validator_type": "regex",
+            "params": {
+                "pattern": "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$"
+            }
+        },
+        {
+            "column_name": "Call Notes",
+            "validator_type": "callnote",
+            "params": {}
+        }
+    
+    ]
+}
